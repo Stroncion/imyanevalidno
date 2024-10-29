@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица и формы</title>
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <table class="table-example">
+        <caption>Счёт</caption>
+        <thead>
+            <tr>
+                <th>Наименование</th>
+                <th>Цена</th>
+                <th>Количество</th>
+                <th>Стоимость</th>
+                <th>Итог</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Ручка</td>
+            <td>50</td>
+            <td>5</td>
+            <td>250</td>
+            <td rowspan="4">875</td>
+        </tr>
+        <tr>
+            <td>Тетрадь</td>
+            <td>15</td>
+            <td>15</td>
+            <td>225</td>
+           
+        </tr>
+        <tr>
+            <td>Пенал</td>
+            <td>250</td>
+            <td>1</td>
+            <td>250</td>
+           
+        </tr>
+        <tr>
+            <td>Карандаш</td>
+            <td>30</td>
+            <td>5</td>
+            <td>150</td>
+           
+        </tr>
+
+    </tbody> 
+    </table>
+    <form id="form-example"> 
+        <label for="login">Введите логин</label><br>
+        <input type="text" id="login" placeholder="Логин" required ><br>
+        <label for="password">Введите пароль</label><br>
+        <input type="password" id ="password" placeholder="Пароль" required><br>
+        <input type="checkbox" id="agreement">
+        <label for="agreement"> Запомнить меня</label><br>
+
+        <input type="radio" id="male" name="gender" checked>
+        <label for="male">М</label>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Ж</label><br>
+
+        <input type="submit" value="Войти"><br>
+    </form>
+    <section id="forma">
+        <h2>Обратная связь</h2>
+    <form id="contact-form">
+        <div class="form-item">
+            <label for="topic">Тема</label><br>
+            <select name="topic" id="topic" required>
+                <option value="1">Заказать услугу</option>
+                <option value="2">Оставить отзыв/замечание</option>
+                <option value="3">Предложить сотрудничество</option>
+                <option value="4">Другое</option>
+            </select><br>
+        </div>
+        <div class="form-item">
+            <label for="name">Имя</label><br>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-item">
+            <label for="mail">E-mail</label><br>
+            <input type="email" id="mail" name="mail" placeholder="Ваш E-mail" required>
+        </div>
+        <div class="form-item">
+            <label for="textarea">Текст сообщения</label><br>
+            <textarea rows="5" cols="60" name="text" placeholder="Собщение/отзыв" required></textarea>
+        </div>
+        <div class="form-item">
+            
+            <input type="submit" value="ОТПРАВИТЬ">
+        </div>
+        <input type="date"><br>
+        <input type="tel"><br>
+        <input type="checkbox">
+    </form>
+    </section>
+</body>
+</html>

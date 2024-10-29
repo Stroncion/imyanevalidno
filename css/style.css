@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: "Oswald", sans-serif;
+    font-size: 0.8em; /* 1rem = 1.2em*/
+}
+
+body {
+    background-color: beige;
+}
+
+header {
+    background-color: rgb(95, 95, 95);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: rgb(95, 95, 95);
+    padding: 10px 50px;
+}
+
+.about {
+    background-color: burlywood;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+h1{
+    text-decoration: underline;
+    font-family: italic;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(46, 126, 42, 0.78);
+    text-transform: uppercase;
+    text-decoration: overline;
+    font-family: italic;
+}
+h3{
+    font-family: italic;
+}
+p {
+    color:black;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    font-family: serif;
+}
+
+.avatar {
+    display: block;
+    margin: 0 auto;
+}
+.articles {
+    padding: 20px 50px;
+}
+
+.content {
+    padding:20px 50px;
+}
+
+.foot a{
+    border:5px #00B344;
+   
+}
+
+img ~ p{
+    margin-top:50p;
+}
+
+a {
+    color:red;
+}
+
+.articles a {
+    color: green;
+}
+
+a:link{
+    color: purple;
+    text-decoration: none;
+}
+
+a:visited{
+    color:rgb(223, 89, 11);
+    background-color: rgb(13, 151, 151);
+}
+
+a:focus{
+    color: orange;
+}
+
+a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
+a:active{
+    color:blueviolet;
+}
+
+.page-list li{
+    background-color: rgb(243, 108, 108);
+}
+
+.page-list a:hover{
+    color: green
+}
+
+.page-list a:focus{
+    color: yellow
+}
+
+.mainmenu a:hover{
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+
+.mainmenu a:focus{
+    color: darkcyan
+}
+
+.page-list li:nth-child(odd)  { 
+    background-color: lightgreen; 
+}
+.page-list li:nth-child(even) { 
+    background-color: darkgreen; 
+}
+
+
+h3{
+    font-size: 1.5rem;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+  
+.li-article3{
+    font-size: 1.3rem;
+}
+
+.article4 dd{
+    font-size:1.7;
+}
+
+
+.table-example{
+    border: 5px red solid;
+    border-collapse: collapse;
+}
+
+.termins::after{
+    content: "Важно!";
+    font-size: 10px;
+    margin-left: 10px;
+    color: red;
+    background-color: rosybrown;
+}
+
+p::first-line{
+    letter-spacing: .2rem;
+}
+
+.table-example td, 
+.table-example th{
+    border-bottom: black 1px solid;
+    padding: 10px 20px;
+}
+p:lang(en) {
+    font-style: italic;
+    color:brown;
+  }
+
+.table-example td:nth-child(3){
+    color: blue;
+    font-weight: bold;
+}
+
+.table-example tr:nth-child(odd){
+    background-color: aqua;
+}
+
+.table-exampletr:nth-child(odd) td{
+    border-bottom: 1px solid blue;
+}
+
+#form-example{
+    width: 300px;
+    margin: 20px auto;
+}
+
+#form-example input[type="submit"]{
+    background-color: aqua;
+    border: 1px darkblue solid;
+    padding: 7px 15px;
+    color: darkblue;
+    border-radius: 5px;
+
+}
+
+#form-example input[type="submit"]:hover{
+    background-color: rgb(17, 185, 185);
+    border-radius: 7px;
+}
+
+.article4 dd{
+    font-size: 1.3rem;
+}
+
+#form-example input[type="submit"]:disabled{
+    background-color: lightgray;
+    color: gray;
+    border: gray;
+}
+
+#form-example input[type="text"],
+#form-example input[type="password"]{
+    background-color: blueviolet;
+    border: none;
+    border-bottom: 1px solid darkblue;
+    padding: 7px;
+}
+
+#form-example input[type="text"]:hover,
+#form-example input[type="password"]:hover{
+    background-color: lavenderblush;
+}
+
+#contact-form input[type="text"]{
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #eddfff;
+    
+}
+
+#contact-form input[type="email"]{
+    height: 20px;
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #eddfff;
+}
+
+#contact-form textarea{
+    
+    padding: 5px;
+    margin-bottom: 10px;
+    border: white solid 1px;
+    background-color: #eddfff;
+}
+
+#contact-form input[type="submit"]{
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-style: italic;
+    border: rgb(147, 11, 238) solid 1px;
+    background-color: #9c62e7;
+}
+
+#contact-form label{
+    color: #ffffff;
+    font-style: italic;
+}
+
+#contact-form input[type="submit"]:hover{
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-style: italic;
+    border: white solid 1px;
+    background-color: #ffffff;
+}
+
+
+
+#contact-form{
+    background-color: rgb(75, 3, 104)
+}
+/*
+
+1em - размер шрифта в браузере по умолчанию
+средний - 16px
+
+1em = 16px
+
+1rem - размер шрифта, который задан в теге html
+*/
