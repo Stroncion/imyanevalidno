@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт</title>
+    <meta name="keywords" content="Джеймс Гослинг, java, отец java, создатель java, Гослинг">
+    <meta name="description" content="Сайт о Джеймсе Гослинге, его Биография, история создания Java">
+    <meta property="og:title" content="Джеймс Гослинг">
+    <meta property="og:site_name" content="Джеймс Гослинг">
+    <meta property="og:url" content="https://stroncion.github.io/imyanevalidno/index.html#forma">
+    <meta property="og:description" content="Сайт о Джеймсе Гослинге, его Биография, история создания Java">
+    <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL8ltj3vKCC4CPTEKqGF9v-P-_Du5-BgIfcA&s">
+
+    <title>Джеймс Гослинг</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" href="img/bank.svg" type="image/x-icon">
@@ -65,6 +73,49 @@
             <li><a href="Article3.html">Интересные факты</a></li>
             <li class="termins"><a href="Article4.html">Список терминов</a></li>
         </ol>
+    </section>
+    <section id="forma">
+        <h2>Обратная связь</h2>
+    <form id="contact-form">
+        <div class="form-item">
+            <label for="topic">Тема</label><br>
+            <select name="topic" id="topic" required>
+                <option value="1">Заказать услугу</option>
+                <option value="2">Оставить отзыв/замечание</option>
+                <option value="3">Предложить сотрудничество</option>
+                <option value="4">Другое</option>
+            </select><br>
+        </div>
+        <div class="form-item">
+            <label for="name">Имя</label><br>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+        </div>
+        <div class="form-item">
+            <label for="mail">E-mail</label><br>
+            <input type="email" id="mail" name="mail" placeholder="Ваш E-mail" required>
+        </div>
+        <div class="form-item">
+            <label for="data">Выберите дату</label><br>
+            <input type="data" id="data" name="data" placeholder="дд.мм.гггг" required>
+        </div>
+        <div class="checkbox">
+            <input type="radio" id="male" name="gender" checked>
+            <label for="male">М</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Ж</label><br>
+        </div>
+
+        <div class="form-item">
+            <label for="textarea">Текст сообщения</label><br>
+            <textarea rows="5" cols="60" name="text" placeholder="Собщение/отзыв" required></textarea>
+        </div>
+        
+        <div class="form-item">
+            <input type="submit" value="ОТПРАВИТЬ">
+        </div>
+        
+
+    </form>
     </section>
    </main>
    <footer class="foot_a">
